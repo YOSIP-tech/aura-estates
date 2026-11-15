@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore six fictional luxury properties on the Costa del Sol. AURA ESTATES portfolio concept.">
+
+  <title>Properties | AURA ESTATES</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">AURA ESTATES</a>
+
+      <nav class="nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="index.html#about">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="header-btn">
+        Contact Us
+      </a>
+
+      <button class="menu-toggle"
+              type="button"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="main-nav">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- INTRO -->
+    <section class="catalog-intro">
+      <span class="eyebrow">EXPLORE OUR COLLECTION</span>
+
+      <h1>Discover Exceptional Properties.</h1>
+
+      <p>
+        Explore a curated collection of exclusive villas,
+        penthouses and exceptional residences along
+        the Costa del Sol.
+      </p>
+    </section>
+
+    <!-- FILTERS -->
+    <form class="catalog-filters" id="catalog-filters">
+
+      <div class="filter-field">
+        <label for="location-filter">LOCATION</label>
+        <select id="location-filter">
+          <option value="all">All Locations</option>
+          <option value="Marbella">Marbella</option>
+          <option value="Málaga">Málaga</option>
+          <option value="Estepona">Estepona</option>
+          <option value="Benalmádena">Benalmádena</option>
+          <option value="Mijas">Mijas</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label for="type-filter">PROPERTY TYPE</label>
+        <select id="type-filter">
+          <option value="all">All Types</option>
+          <option value="villa">Villa</option>
+          <option value="penthouse">Penthouse</option>
+          <option value="residence">Residence</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label for="price-filter">PRICE RANGE</label>
+        <select id="price-filter">
+          <option value="all">Any Price</option>
+          <option value="under-1m">Under €1M</option>
+          <option value="1m-2m">€1M – €2M</option>
+          <option value="over-2m">Over €2M</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label for="sort-filter">SORT BY</label>
+        <select id="sort-filter">
+          <option value="featured">Featured</option>
+          <option value="low-high">Price: Low to High</option>
+          <option value="high-low">Price: High to Low</option>
+        </select>
+      </div>
+
+      <button class="apply-filters" type="submit">
+        Apply Filters
+      </button>
+
+    </form>
+
+    <!-- RESULTS -->
+    <section class="catalog-results">
+      <h2 id="results-count" aria-live="polite">
+        6 Properties Found
+      </h2>
+
+      <div class="property-grid" id="catalog-grid"></div>
+    </section>
+
+    <p class="catalog-disclaimer">
+      Portfolio concept · All properties and prices are fictional.
+    </p>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>AURA ESTATES — Portfolio Concept</p>
+      <p>Fictional properties · Demonstration website</p>
+    </div>
+  </footer>
+
+</body>
+</html>

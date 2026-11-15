@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact AURA ESTATES. Demonstration contact page for a luxury real estate portfolio website.">
+  <title>Contact | AURA ESTATES</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">AURA ESTATES</a>
+
+      <nav class="nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="index.html#about">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="header-btn">Contact Us</a>
+
+      <button class="menu-toggle" type="button"
+              aria-label="Open menu"
+              aria-expanded="false"
+              aria-controls="main-nav">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+
+    <section class="contact-intro">
+      <span class="eyebrow">GET IN TOUCH</span>
+      <h1>Let's Find Your<br>Perfect Home.</h1>
+      <p>
+        Explore our portfolio concept and get in touch
+        with the team behind this website.
+      </p>
+    </section>
+
+    <div class="contact-layout">
+
+      <section class="contact-form-card">
+        <h2>Send an Enquiry</h2>
+
+        <p class="enquiry-property"
+           id="enquiry-property" hidden></p>
+
+        <form id="enquiry-form">
+          <label for="enquiry-name">Your Name</label>
+          <input id="enquiry-name"
+                 type="text"
+                 placeholder="Enter your full name"
+                 autocomplete="name" required>
+
+          <label for="enquiry-email">Email Address</label>
+          <input id="enquiry-email"
+                 type="email"
+                 placeholder="Enter your email address"
+                 autocomplete="email" required>
+
+          <label for="enquiry-message">Your Message</label>
+          <textarea id="enquiry-message"
+                    placeholder="Tell us about your enquiry..."
+                    rows="5" required></textarea>
+
+          <button type="submit" class="contact-submit">
+            Send Message
+          </button>
+
+          <p id="enquiry-feedback"
+             class="enquiry-feedback"
+             aria-live="polite"></p>
+        </form>
+      </section>
+
+      <aside class="contact-info">
+        <span class="eyebrow">PERSONAL ASSISTANCE</span>
+        <h2>We're Here to Help.</h2>
+
+        <p>
+          Interested in our web design work?
+          Contact the studio behind this demonstration.
+        </p>
+
+        <div class="contact-info-item">
+          <strong>Concept Location</strong>
+          <span>Costa del Sol, Spain</span>
+        </div>
+
+        <div class="contact-info-item">
+          <strong>WhatsApp Enquiry</strong>
+          <div id="whatsapp-holder">
+            Contact link not configured
+          </div>
+        </div>
+
+        <p class="concept-note">
+          AURA ESTATES is a portfolio concept, not a
+          real estate agency.
+        </p>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="footer"></footer>
+</body>
+</html>
